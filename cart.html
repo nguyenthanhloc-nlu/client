@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo2.png" alt="logo" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+
+                        <li><a href="products-iphone.html">iPhone</a></li>
+                        <li><a href="products-mac.html">Mac</a></li>
+                        <li><a href="products-ipad.html">iPad</a></li>
+                        <li><a href="products-watch.html">Watch</a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input type="text" class="input-search" placeholder="iPhone 13...">
+                </div>
+
+                <a href="cart.html">
+                    <img src="assets/images/cart.png" width="40px" height="40px">
+                    <span class="header__cart-notice">
+                        3
+                    </span>
+                </a>
+                <div class="account-heder" id="link-account">
+                    <a href="account.html"><i class="fas fa-user-circle fa-2x" style="color: white;"></i></a>
+                </div>
+                <div class="account-heder" id="link-sign-in"><a href="./signIn.html">
+                        <i class="far fa-user-circle fa-2x" style="color: white; margin-left: 15px;"></i>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-payment cart-payment-1">
+        <div class="container">
+            <div class="row row-cart-payment row-cart-payment-1">
+                <div class="l-12 m-12 c-12 col-infor-products">
+                    <div class="row">
+                        <div class="l-2 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/228744/s16/iphone-12-promax-golden-1-650x650.png"
+                                    width="150" height="150" alt="">
+                                <button type="button" class="btn-del">
+                                    <i class="icon-del">xóa</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="l-7 m-12 c-12">
+                            <!-- <h2>infor</h2> -->
+                            <div class="infor-prd">
+                                <h2 class="media-title font-weight-semibold"> <a href="#" data-abc="true">Apple iPhone
+                                        12 Pro Max (Gold, 64 GB)</a> </h2>
+                                <p class="mt-10">256 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 15MP Front
+                                    Camera A12 Bionic Chip Processor | Gorilla Glass</p>
+                            </div>
+                        </div>
+                        <div class="l-3 m-12 c-12">
+                            <!-- <h2>price</h2> -->
+                            <h1 class="mb-0 font-weight-semibold">36.990.000₫</h1>
+                            <input class="up-down-number" type="number" id="tentacles" name="tentacles" min="0"
+                                max="100000" value="1">
+                        </div>
+                    </div>
+                    <!-- <hr class="hr-small"> -->
+                </div>
+                <div class="l-12 m-12 c-12 col-infor-products">
+                    <div class="row">
+                        <div class="l-2 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/230521/s16/iphone-13-pro-blue-650x650.png"
+                                    width="150" height="150" alt="">
+                                <button type="button" class="btn-del">
+                                    <i class="icon-del">xóa</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="l-7 m-12 c-12">
+                            <!-- <h2>infor</h2> -->
+                            <div class="infor-prd">
+                                <h2 class="media-title font-weight-semibold"> <a href="#" data-abc="true">Apple iPhone
+                                        13 Pro
+                                        (Blue, 128 GB)</a> </h2>
+                                <p class="mt-10">128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front
+                                    Camera
+                                    A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+                            </div>
+                        </div>
+                        <div class="l-3 m-12 c-12">
+                            <!-- <h2>price</h2> -->
+                            <h1 class="mb-0 font-weight-semibold">40.990.000₫</h1>
+                            <input class="up-down-number" type="number" id="tentacles" name="tentacles" min="0"
+                                max="100000" value="1">
+                        </div>
+                    </div>
+                </div>
+                <!-- <hr class="hr-small"> -->
+
+
+                <!-- tạm tính -->
+                <!-- <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                        <div class="l-2 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h2 class="f-h2-temp-price">Tạm tính</h2>
+                            </div>
+                        </div>
+                        <div class="l-7 m-12 c-12">
+                        </div>
+                        <div class="l-3 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h1 class="f-h2-temp-price">76.980.000₫</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cart-payment  cart-payment-2">
+        <div class="container">
+            <div class="row row-cart-payment row-cart-payment-2">
+                <div class="l-12 m-12 c-12 col-infor-customer text-align-left">
+                    <h2>Thông tin khách hàng</h2>
+                </div>
+
+                <div class="l-12 m-12 c-12 col-infor-customer">
+                    <div class="row">
+                        <div class="col l-2 m-2 c-2">
+                            <form action="" class="text-align-left form-radio">
+                                <div class="row">
+                                    <div class="col l-6 m-12 c-12">
+                                        <input type="radio" id="" name="sex" value="Nam">
+                                        <label for="age1">Nam</label>
+                                    </div>
+
+                                    <div class="col l-6 m-12 c-12">
+
+                                        <input type="radio" id="age1" name="sex" value="Nữ">
+                                        <label for="age1">Nữ</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col l-8 m-2 c-12">
+                        </div>
+                    </div>
+                </div>
+                <div class="l-12 m-12 c-12 col-infor-customer">
+                    <form action="">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <input class="input-chung" type="text" id="name" name="name"
+                                    placeholder="Họ và tên"><br>
+                            </div>
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <input class="input-chung" type="tel" id="name" name="tel"
+                                    placeholder="Số điện thoại"><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-payment  cart-payment-3">
+        <div class="container">
+            <div class="row row-cart-payment row-cart-payment-3">
+                <div class="l-12 m-12 c-12 col-infor-customer text-align-left">
+                    <h2>Thông tin giao hàng</h2>
+                </div>
+                <div class="l-12 m-12 c-12 col-infor-customer">
+                    <div class="row">
+                        <div class="col l-5 m-5 c-5">
+                            <form action="" class="text-align-left">
+                                <div class="row">
+                                    <div class="col l-6 m-12 c-12">
+                                        <input type="radio" id="" name="sex" value="Nam">
+                                        <label for="age1">Giao tận nơi</label>
+                                    </div>
+                                    <div class="col l-6 m-12 c-12">
+                                        <input type="radio" id="age1" name="sex" value="Nữ">
+                                        <label for="age1">Nhận tại cửa hàng</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col l-7 m-7 c-7">
+                        </div>
+                    </div>
+                </div>
+                <div class="l-12 m-12 c-12 col-infor-customer">
+                    <form action="" class="form-tinh-thanh">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <select class="input-chung" name="calc_shipping_provinces" required="">
+                                    <option value="">Tỉnh / Thành phố</option>
+                                </select>
+                            </div>
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <select class="input-chung" name="calc_shipping_district" required="">
+                                    <option value="">Quận / Huyện</option>
+                                </select>
+                            </div>
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <input class="input-chung" type="text" id="address" name="calc_shipping_district"
+                                    placeholder="Xã"><br>
+                            </div>
+                            <div class="col l-6 m-6 c-12 col-input-form">
+                                <input class="input-chung" type="text" name="calc_shipping_district"
+                                    placeholder="Số nhà, tên đường"><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                        <div class="l-2 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h2 class="f-h2-temp-price">Tổng cộng</h2>
+                            </div>
+                        </div>
+                        <div class="l-7 m-0 c-0">
+                        </div>
+                        <div class="l-3 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h1 class="f-h2-temp-price">96.980.000₫</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                        <div class="l-2 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h2 class="f-h2-temp-price" style="margin-right: 14px;">Giảm giá</h2>
+                            </div>
+                        </div>
+                        <div class="l-7 m-0 c-0">
+                        </div>
+                        <div class="l-3 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h1 class="f-h2-temp-price">96.980.000₫</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                        <div class="l-2 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h2 class="f-h2-temp-price">Thành tiền</h2>
+                            </div>
+                        </div>
+                        <div class="l-7 m-0 c-0">
+                        </div>
+                        <div class="l-3 m-6 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                                <h1 class="f-h2-temp-price">76.980.000₫</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-12 m-12 c-12" style="margin-bottom: 20px;">
+                    <button class="button-order">ĐẶT HÀNG</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Hệ thống cửa hàng</h3>
+                    <ul>
+                        <li><a href="storeRules.html">Nội quy cửa hàng</a></li>
+                        <li><a href="serviceQuality.html">Chất lượng dịch vụ</a></li>
+                        <li><a href="systemStore.html">Xem 4 cửa hàng</a></li>
+                        <li>
+                            <a href="warrantyAndExchange.html">Bảo hành và đổi trả</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li><a href="">Điều kiện giao dịch chung</a></li>
+                        <li><a href="">Hướng dẫn mua hàng online</a></li>
+                        <li><a href="deliveryPolicy.html">Chính sách giao hàng</a></li>
+                        <li><a href="">Hướng dẫn thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Về thương hiệu ASTORE</h3>
+                    <ul>
+                        <li><a href="">Giới thiệu về ASTORE</a></li>
+                        <li><a href="">Bán hàng doanh nghiệp</a></li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="">Chính sách ưu đãi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <a href="./index.html">
+                        <img src="assets/images/logo1.png" />
+                    </a>
+                    <p>
+                        Trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple tới toàn bộ
+                        người dùng tại Việt Nam. Từ tháng 09/2020, ASTORE – chính thức là đại lý uỷ quyền Apple tại Việt
+                        Nam.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> © 2018. Công ty AGROUP0. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007.
+            </p>
+            <p class="copyright"> GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020. </p>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+    <script>
+        if (address_2 = localStorage.getItem('address_2_saved')) {
+            $('select[name="calc_shipping_district"] option').each(function () {
+                if ($(this).text() == address_2) {
+                    $(this).attr('selected', '')
+                }
+            })
+            $('input.billing_address_2').attr('value', address_2)
+        }
+        if (district = localStorage.getItem('district')) {
+            $('select[name="calc_shipping_district"]').html(district)
+            $('select[name="calc_shipping_district"]').on('change', function () {
+                var target = $(this).children('option:selected')
+                target.attr('selected', '')
+                $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+                address_2 = target.text()
+                $('input.billing_address_2').attr('value', address_2)
+                district = $('select[name="calc_shipping_district"]').html()
+                localStorage.setItem('district', district)
+                localStorage.setItem('address_2_saved', address_2)
+            })
+        }
+        $('select[name="calc_shipping_provinces"]').each(function () {
+            var $this = $(this),
+                stc = ''
+            c.forEach(function (i, e) {
+                e += +1
+                stc += '<option value=' + e + '>' + i + '</option>'
+                $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
+                if (address_1 = localStorage.getItem('address_1_saved')) {
+                    $('select[name="calc_shipping_provinces"] option').each(function () {
+                        if ($(this).text() == address_1) {
+                            $(this).attr('selected', '')
+                        }
+                    })
+                    $('input.billing_address_1').attr('value', address_1)
+                }
+                $this.on('change', function (i) {
+                    i = $this.children('option:selected').index() - 1
+                    var str = '',
+                        r = $this.val()
+                    if (r != '') {
+                        arr[i].forEach(function (el) {
+                            str += '<option value="' + el + '">' + el + '</option>'
+                            $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>' + str)
+                        })
+                        var address_1 = $this.children('option:selected').text()
+                        var district = $('select[name="calc_shipping_district"]').html()
+                        localStorage.setItem('address_1_saved', address_1)
+                        localStorage.setItem('district', district)
+                        $('select[name="calc_shipping_district"]').on('change', function () {
+                            var target = $(this).children('option:selected')
+                            target.attr('selected', '')
+                            $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+                            var address_2 = target.text()
+                            $('input.billing_address_2').attr('value', address_2)
+                            district = $('select[name="calc_shipping_district"]').html()
+                            localStorage.setItem('district', district)
+                            localStorage.setItem('address_2_saved', address_2)
+                        })
+                    } else {
+                        $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>')
+                        district = $('select[name="calc_shipping_district"]').html()
+                        localStorage.setItem('district', district)
+                        localStorage.removeItem('address_1_saved', address_1)
+                    }
+                })
+            })
+        })</script>
+</body>
+
+</html>

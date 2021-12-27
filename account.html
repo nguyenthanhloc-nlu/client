@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài khoản</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/account-information.css" />
+  </head>
+
+  <body>
+    <div class="account-container">
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="assets/images/logo2.png" alt="logo" width="150px"
+              /></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="products-iphone.html">iPhone</a></li>
+                <li><a href="products-mac.html">Mac</a></li>
+                <li><a href="products-ipad.html">iPad</a></li>
+                <li><a href="products-watch.html">Watch</a></li>
+              </ul>
+            </nav>
+            <div class="search-box">
+              <button class="btn-search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="iPhone 13..."
+              />
+            </div>
+            <a href="cart.html">
+              <img src="assets/images/cart.png" width="40px" height="40px" />
+              <span class="header__cart-notice"> 3 </span>
+            </a>
+            <div class="account-heder" id="link-account">
+              <a href="account.html"
+                ><i class="fas fa-user-circle fa-2x" style="color: white"></i
+              ></a>
+            </div>
+            <div class="account-heder" id="link-sign-in">
+              <a href="./signIn.html">
+                <i class="far fa-user-circle fa-2x" style="color: white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Products -->
+      <section class="cps-section">
+        <div class="cps-container">
+          <div class="cps-left-col">
+            <div class="block-menu">
+              <div class="block-menu__item-menu active">
+                <a href="account.html"
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <p>Tài khoản của bạn</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu">
+                <a href="rate-account.html"
+                  ><div class="box-icon-cps"><i class="fas fa-medal"></i></div>
+                  <p>Hạng thành viên</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu">
+                <a href="gift-account.html"
+                  ><div class="box-icon-cps"><i class="fas fa-gift"></i></div>
+                  <p>Ưu đãi của bạn</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu">
+                <a href="history-account.html"
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-history"></i>
+                  </div>
+                  <p>Lịch sử mua hàng</p></a
+                >
+              </div>
+              <div id="exit-account-cps" class="block-menu__item-menu">
+                <a href="#"
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                  <p>Thoát tài khoản</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="alert-cancel-order-account" class="alert-cancel-order">
+            <p>Bạn muốn thoát tài khoản?</p>
+            <div class="btn-cancel-group">
+              <button id="btn-cancel-account" class="btn btn-cancel">
+                Không
+              </button>
+              <button id="btn-accept-account" class="btn btn-accept">
+                Xác nhận
+              </button>
+            </div>
+          </div>
+          <div id="bg-overlay-account" class="bg-overlay"></div>
+          <div class="cps-right-col">
+            <div>
+              <section>
+                <div class="account-sider-bar">
+                  <aside class="sidebar">
+                    <nav class="nav">
+                      <ul class="nav-items">
+                        <li>
+                          <a href="account.html" class="nav-link">
+                            <i class="fas fa-user-circle"></i>Tài Khoản của
+                            bạn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="rate-account.html" class="nav-link"
+                            ><i class="fas fa-medal"></i>Hạng thành viên</a
+                          >
+                        </li>
+                        <li>
+                          <a href="gift-account.html" class="nav-link"
+                            ><i class="fas fa-gift"></i>Ưu đãi của bạn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="history-account.html" class="nav-link"
+                            ><i class="fas fa-history"></i>Lịch sử mua hàng</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" id="exit-account-sider" class="nav-link">
+                            <i class="fas fa-sign-out-alt"></i>Thoát tài
+                            khoản</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="sidebar-separator"></div>
+                    </nav>
+                  </aside>
+                  <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="block-smember-info account">
+                  <div class="block-smember-info__avatar">
+                    <img
+                      src="./assets/images/avatar_account.jpg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="block-smember-info__box-title">
+                    <span>Xin chào!</span>
+                    <p>Vũ Văn Minh</p>
+                    <button class="btn-item-management">
+                      <a href="./404.html">management</a>
+                    </button>
+                  </div>
+                  <div class="block-smember-info__box-content">
+                    <div class="item-content">
+                      <p>Sinh nhật</p>
+                      <i class="fas fa-birthday-cake"></i>
+                      <p class="join-date">Chưa cập nhật</p>
+                    </div>
+                    <div class="item-content">
+                      <p>Số điện thoại</p>
+                      <i class="fas fa-mobile-alt"></i>
+                      <p class="join-date">0917404157</p>
+                    </div>
+
+                    <div class="item-content">
+                      <p>Hạng thành viên</p>
+                      <i class="fas fa-medal"></i>
+                      <p class="small-rank">Chưa có hạng</p>
+                    </div>
+                    <div class="item-content">
+                      <p>Ngày tham gia</p>
+                      <i class="far fa-calendar-check"></i>
+                      <p class="join-date">21/12/2021</p>
+                    </div>
+                  </div>
+                  <div class="block-smember__box-content">
+                    <div class="item-content gift">
+                      <a href="./gift-account.html" class="see-detail"
+                        ><div class="item-content__box-icon gift">
+                          <i class="fas fa-gifts" style="color: #c51018"></i>
+                        </div>
+                        <p class="item-content__title">Ưu đãi của bạn</p>
+                        <p class="item-content__counter">0 ưu đãi</p>
+                        <button class="item-content__detail">
+                          Xem chi tiết
+                        </button></a
+                      >
+                    </div>
+                    <div class="item-content order">
+                      <a href="./history-account.html" class="see-detail"
+                        ><div class="item-content__box-icon order">
+                          <i class="fas fa-box-open" style="color: #d5941c"></i>
+                        </div>
+                        <p class="item-content__title">Đơn hàng của bạn</p>
+                        <p class="item-content__counter">0 đơn hàng</p>
+                        <button class="item-content__detail">
+                          Xem chi tiết
+                        </button></a
+                      >
+                    </div>
+                    <div class="item-content rank" smem-rank="">
+                      <a href="rate-account.html" class="see-detail"
+                        ><div class="item-content__box-icon rank">
+                          <i class="fas fa-crown" style="color: #ffc02e"></i>
+                        </div>
+                        <p class="item-content__title">Hạng thành viên</p>
+                        <p class="item-content__counter">Chưa có hạng</p>
+                        <button class="item-content__detail">
+                          Xem chi tiết
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- javascript -->
+    <script src="./assets/js/account-information.js"></script>
+    <script src="./assets/js/format-page.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/account.js"></script>
+  </body>
+</html>

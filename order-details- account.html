@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài khoản</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/account-information.css" />
+  </head>
+  <style>
+    .w-15 {
+      width: 20% !important;
+    }
+    .w-10 {
+      width: 15% !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .row {
+      margin: 0;
+    }
+    .btn-back-order-account button:hover {
+      background: whitesmoke;
+    }
+  </style>
+  <body>
+    <div class="account-container">
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="assets/images/logo2.png" alt="logo" width="150px"
+              /></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="products-iphone.html">iPhone</a></li>
+                <li><a href="products-mac.html">Mac</a></li>
+                <li><a href="products-ipad.html">iPad</a></li>
+                <li><a href="products-watch.html">Watch</a></li>
+              </ul>
+            </nav>
+            <div class="search-box">
+              <button class="btn-search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="iPhone 13..."
+              />
+            </div>
+            <a href="cart.html">
+              <img src="assets/images/cart.png" width="40px" height="40px" />
+              <span class="header__cart-notice"> 3 </span>
+            </a>
+            <div class="account-heder" id="link-account">
+              <a href="account.html"
+                ><i class="fas fa-user-circle fa-2x" style="color: white"></i
+              ></a>
+            </div>
+            <div class="account-heder" id="link-sign-in">
+              <a href="./signIn.html">
+                <i class="far fa-user-circle fa-2x" style="color: white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Products -->
+      <section class="cps-section">
+        <div class="cps-container">
+          <div class="cps-left-col">
+            <div class="block-menu">
+              <div class="block-menu__item-menu">
+                <a href="account.html"
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <p>Tài khoản của bạn</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu">
+                <a href="rate-account.html"
+                  ><div class="box-icon-cps"><i class="fas fa-medal"></i></div>
+                  <p>Hạng thành viên</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu">
+                <a href="gift-account.html"
+                  ><div class="box-icon-cps"><i class="fas fa-gift"></i></div>
+                  <p>Ưu đãi của bạn</p></a
+                >
+              </div>
+              <div class="block-menu__item-menu active">
+                <a href="history-account.html"
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-history"></i>
+                  </div>
+                  <p>Lịch sử mua hàng</p></a
+                >
+              </div>
+              <div id="exit-account-cps" class="block-menu__item-menu">
+                <a href=""
+                  ><div class="box-icon-cps">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                  <p>Thoát tài khoản</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="alert-cancel-order-account" class="alert-cancel-order">
+            <p>Bạn muốn thoát tài khoản?</p>
+            <div class="btn-cancel-group">
+              <button id="btn-cancel-account" class="btn btn-cancel">
+                Không
+              </button>
+              <button id="btn-accept-account" class="btn btn-accept">
+                Xác nhận
+              </button>
+            </div>
+          </div>
+          <div id="bg-overlay-account" class="bg-overlay"></div>
+          <div class="cps-right-col">
+            <div>
+              <section>
+                <div class="account-sider-bar">
+                  <aside class="sidebar">
+                    <nav class="nav">
+                      <ul class="nav-items">
+                        <li>
+                          <a href="account.html" class="nav-link">
+                            <i class="fas fa-user-circle"></i>Tài Khoản của
+                            bạn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="rate-account.html" class="nav-link"
+                            ><i class="fas fa-medal"></i>Hạng thành viên</a
+                          >
+                        </li>
+                        <li>
+                          <a href="gift-account.html" class="nav-link"
+                            ><i class="fas fa-gift"></i>Ưu đãi của bạn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="history-account.html" class="nav-link"
+                            ><i class="fas fa-history"></i>Lịch sử mua hàng</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" id="exit-account-sider" class="nav-link">
+                            <i class="fas fa-sign-out-alt"></i>Thoát tài
+                            khoản</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="sidebar-separator"></div>
+                    </nav>
+                  </aside>
+                  <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="block-manage-order" style="background: white">
+                  <div class="block-manage-order__title">
+                    <p>Quản lý đơn hàng</p>
+                  </div>
+                  <div class="container">
+                    <div
+                      class="row row-cart-payment row-cart-payment-1"
+                      style="margin-top: 20px; border-radius: 20px"
+                    >
+                      <div class="l-12 m-12 c-12 col-infor-products">
+                        <div class="row">
+                          <div class="l-2 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                              <img
+                                src="https://cdn.tgdd.vn/Products/Images/42/228744/s16/iphone-12-promax-golden-1-650x650.png"
+                                width="150"
+                                height="150"
+                                alt=""
+                              />
+                              <button type="button" class="btn-del">
+                                <i class="icon-del">xóa</i>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="l-7 m-12 c-12">
+                            <!-- <h2>infor</h2> -->
+                            <div class="infor-prd">
+                              <h2 class="media-title font-weight-semibold">
+                                <a href="#" data-abc="true"
+                                  >Apple iPhone 12 Pro Max (Gold, 64 GB)</a
+                                >
+                              </h2>
+                              <p class="mt-10">
+                                256 GB ROM | 15.49 cm (6.1 inch) Display 12MP
+                                Rear Camera | 15MP Front Camera A12 Bionic Chip
+                                Processor | Gorilla Glass
+                              </p>
+                            </div>
+                          </div>
+                          <div class="l-3 m-12 c-12">
+                            <!-- <h2>price</h2> -->
+                            <h1 class="mb-0 font-weight-semibold">
+                              36.990.000₫
+                            </h1>
+                            <input
+                              class="up-down-number"
+                              type="number"
+                              id="tentacles"
+                              name="tentacles"
+                              min="0"
+                              max="100000"
+                              value="1"
+                            />
+                          </div>
+                        </div>
+                        <!-- <hr class="hr-small"> -->
+                      </div>
+                      <div class="l-12 m-12 c-12 col-infor-products">
+                        <div class="row">
+                          <div class="l-2 m-12 c-12">
+                            <div class="mr-2 mb-3 mb-lg-0">
+                              <img
+                                src="https://cdn.tgdd.vn/Products/Images/42/230521/s16/iphone-13-pro-blue-650x650.png"
+                                width="150"
+                                height="150"
+                                alt=""
+                              />
+                              <button type="button" class="btn-del">
+                                <i class="icon-del">xóa</i>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="l-7 m-12 c-12">
+                            <!-- <h2>infor</h2> -->
+                            <div class="infor-prd">
+                              <h2 class="media-title font-weight-semibold">
+                                <a href="#" data-abc="true"
+                                  >Apple iPhone 13 Pro (Blue, 128 GB)</a
+                                >
+                              </h2>
+                              <p class="mt-10">
+                                128 GB ROM | 15.49 cm (6.1 inch) Display 12MP
+                                Rear Camera | 7MP Front Camera A12 Bionic Chip
+                                Processor | Gorilla Glass with high quality
+                                display
+                              </p>
+                            </div>
+                          </div>
+                          <div class="l-3 m-12 c-12">
+                            <!-- <h2>price</h2> -->
+                            <h1 class="mb-0 font-weight-semibold">
+                              40.990.000₫
+                            </h1>
+                            <input
+                              class="up-down-number"
+                              type="number"
+                              id="tentacles"
+                              name="tentacles"
+                              min="0"
+                              max="100000"
+                              value="1"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                      <div class="l-2 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h2 class="f-h2-temp-price">Tổng cộng</h2>
+                        </div>
+                      </div>
+                      <div class="l-7 m-0 c-0"></div>
+                      <div class="l-3 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h1 class="f-h2-temp-price">96.980.000₫</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                      <div class="l-2 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h2
+                            class="f-h2-temp-price"
+                            style="margin-right: 14px"
+                          >
+                            Giảm giá
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="l-7 m-0 c-0"></div>
+                      <div class="l-3 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h1 class="f-h2-temp-price">96.980.000₫</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="l-12 m-12 c-12 col-temp-price">
+                    <div class="row">
+                      <div class="l-2 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h2 class="f-h2-temp-price">Thành tiền</h2>
+                        </div>
+                      </div>
+                      <div class="l-7 m-0 c-0"></div>
+                      <div class="l-3 m-6 c-12">
+                        <div class="mr-2 mb-3 mb-lg-0">
+                          <h1 class="f-h2-temp-price">76.980.000₫</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-back-order-account" style="margin-left: 40%">
+                    <button
+                      style="
+                        border-radius: 10px;
+                        background: lightblue;
+                        height: 32px;
+                      "
+                    >
+                      <a href="history-account.html" style="font-size: 18px"
+                        >Quay về lịch sử mua hàng</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/account-information.js"></script>
+    <script src="./assets/js/format-page.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/account.js"></script>
+  </body>
+</html>
